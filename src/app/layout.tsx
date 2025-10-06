@@ -1,4 +1,4 @@
-// Root layout - just passes through to locale layout
+// Root layout - passes through to locale layout
 export default function RootLayout({
   children,
 }: {
