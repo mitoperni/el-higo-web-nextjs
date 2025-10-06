@@ -81,7 +81,7 @@
     "review2": "Cozy atmosphere and delicious food. The seafood paella was perfect and the pionono dessert is the best I've ever had. Totally recommended.",
     "review3": "Charming restaurant in the heart of Granada. The eggplant with honey is a delight and the oxtail melts in your mouth. We will definitely return.",
     "reviewSource": "TripAdvisor / Google Reviews",
-    "reviewCount": "Based on {{count}} reviews"
+    "reviewCount": "Based on {count} reviews"
   },
   "gallery": {
     "title": "Gallery",

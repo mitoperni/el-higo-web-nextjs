@@ -81,7 +81,7 @@
     "review2": "Ambiente acogedor y comida deliciosa. La paella de mariscos estaba perfecta y el pionono de postre es el mejor que he probado. Totalmente recomendable.",
     "review3": "Restaurante con encanto en pleno centro de Granada. La berenjenas con miel son una delicia y el rabo de toro se deshace en la boca. Volveremos sin duda.",
     "reviewSource": "TripAdvisor / Google Reviews",
-    "reviewCount": "Basado en {{count}} opiniones"
+    "reviewCount": "Basado en {count} opiniones"
   },
   "gallery": {
     "title": "Galería",

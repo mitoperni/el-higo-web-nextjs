@@ -1,6 +1,6 @@
 'use client';
 import { useTranslations } from "next-intl";
-import Icons from "../../../../../../el-higo-web/src/components/ui/Icons";
+import Icons from "../../ui/Icons";
 import StarRating from "./StarRating";
 
 interface Review {

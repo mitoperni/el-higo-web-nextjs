@@ -1,0 +1,26 @@
+{
+  "home": {
+    "title": "El Higo - Restaurante en el Albaicín de Granada",
+    "description": "Un rincón escondido en el Albaicín de Granada. Descubre sabores auténticos en un ambiente único."
+  },
+  "menu": {
+    "title": "Carta - El Higo Restaurante Granada",
+    "description": "Descubre nuestra carta mediterránea con opciones vegetarianas y veganas. Tapas, hummus, berenjenas y más."
+  },
+  "patio": {
+    "title": "El Patio - Espacio Único en el Albaicín",
+    "description": "Nuestro patio secreto en el corazón del Albaicín. Un espacio íntimo y auténtico en Granada."
+  },
+  "howToFind": {
+    "title": "Cómo Llegar - El Higo Albaicín Granada",
+    "description": "Encuentra El Higo en el laberinto del Albaicín. Direcciones y consejos para llegar a nuestro restaurante."
+  },
+  "reservations": {
+    "title": "Reservas - El Higo Restaurante Granada",
+    "description": "Reserva tu mesa en El Higo. Garantiza tu lugar en nuestro patio secreto del Albaicín."
+  },
+  "contact": {
+    "title": "Contacto - El Higo Restaurante Granada",
+    "description": "Ponte en contacto con El Higo. Información, consultas y sugerencias. Estamos en el Albaicín."
+  }
+}

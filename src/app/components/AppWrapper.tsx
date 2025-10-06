@@ -3,8 +3,8 @@ import { useState, useEffect, ReactNode } from 'react';
 import Navbar from './layout/Navbar';
 import Footer from './layout/Footer';
 import MockupDisclaimerModal from './ui/MockupDisclaimerModal';
-import useScrollToTop from '../hooks/useScrollToTop';
-import { getAllMenuImages } from '../data/menuData';
+import useScrollToTop from '../../hooks/useScrollToTop';
+import { getAllMenuImages } from '../../data/menuData';
 
 interface AppWrapperProps {
   children: ReactNode;

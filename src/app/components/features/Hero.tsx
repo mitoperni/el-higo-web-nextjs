@@ -1,30 +1,16 @@
 'use client';
-import { useEffect } from 'react';
 import { useTranslations } from 'next-intl';
 import LanguageLink from '../ui/LanguageLink';
-import heroImage from '../../assets/IMG_1941.PNG';
 
-interface HeroProps {
-  onImageLoad?: (loaded: boolean) => void;
-}
-
-const Hero = ({ onImageLoad }: HeroProps) => {
+const Hero = () => {
   const t = useTranslations();
-
-  useEffect(() => {
-    if (onImageLoad) {
-      const img = new Image();
-      img.onload = () => onImageLoad(true);
-      img.src = heroImage;
-    }
-  }, [onImageLoad]);
 
   return (
     <section className="relative min-h-screen flex items-center justify-center bg-black">
       <div
         className="absolute inset-0 bg-cover bg-center bg-no-repeat opacity-80"
         style={{
-          backgroundImage: `url(${heroImage})`,
+          backgroundImage: `url(/IMG_1941.PNG)`,
           filter: 'sepia(30%) saturate(120%) hue-rotate(10deg) brightness(0.9) contrast(1.1)',
         }}
       >
