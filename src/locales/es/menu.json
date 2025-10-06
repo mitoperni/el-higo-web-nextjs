@@ -1,0 +1,126 @@
+{
+  "title": "Nuestra Carta",
+  "subtitle": "Sabores auténticos en el corazón del Albaicín",
+  "categories": {
+    "starters": "Raciones",
+    "sandwiches": "Bocadillos",
+    "salads": "Ensaladas",
+    "meat_and_fish": "Carnes y Pescados"
+  },
+  "items": {
+    "starters": [
+      {
+        "name": "Aguacate con langostinos",
+        "description": "Aguacate, langostinos, salsa cocktail casera",
+        "price": "9,50€",
+        "options": "Opción vegana: con salsa cocktail vegana y frutos secos"
+      },
+      {
+        "name": "Hummus",
+        "description": "Garbanzos, limón, ajo, tahini, comino, AOVE",
+        "price": "11€"
+      },
+      {
+        "name": "Queso idiazábal ahumado",
+        "description": "Queso de leche de oveja",
+        "price": "12€"
+      },
+      {
+        "name": "Jamón de Trevélez",
+        "description": "Jamón ahumado alpujarreño",
+        "price": "11€"
+      },
+      {
+        "name": "Tataki de atún",
+        "description": "Marinado con salsa de soja, jengibre y vinagres y rebozado en sésamo",
+        "price": "20€"
+      },
+      {
+        "name": "Tabla de patés veganos",
+        "description": "Zanahoria, remolacha, aceitunas negras y berenjena",
+        "price": "18€"
+      },
+      {
+        "name": "Crema del día",
+        "description": "Pregunta a nuestro personal",
+        "price": "17€"
+      }
+    ],
+    "sandwiches": [
+      {
+        "name": "Salmón",
+        "description": "Salmón ahumado, aguacate, lechuga y crema de cebolla con queso",
+        "price": "18€"
+      },
+      {
+        "name": "Vegetal",
+        "description": "Queso de cabra, rúcula, manzana, cebolla caramelizada y mermelada de pimiento rojo",
+        "price": "8€"
+      },
+      {
+        "name": "Hamburguesa vegana",
+        "description": "Hamburguesa de espinacas o avena 180g, tomate, lechuga, pepinillo agridulce, cebolla caramelizada, mayonesa y mostaza de Dijon",
+        "options": "Opción sin gluten: espinaca y pan sin gluten",
+        "price": "8€"
+      },
+      {
+        "name": "Hamburguesa de ternera",
+        "description": "200g de carne de ternera 1ª calidad, tomate, lechuga, pepinillo agridulce, cebolla caramelizada, mayonesa y mostaza",
+        "price": "8,50€"
+      }
+    ],
+    "salads": [
+      {
+        "name": "El Higo",
+        "description": "Mezclum de lechugas, tomate, cebolleta, zanahoria, pepino, maíz, frutas variadas y salsa de queso de cabra",
+        "price": "9,50€"
+      },
+      {
+        "name": "Espinacas y pavo",
+        "description": "Espinacas, tomate cherry, pera, pechuga de pavo a la plancha con sésamo, nueces, pipas de girasol, queso parmesano y vinagreta de mermelada de temporada y AOVE",
+        "options": "Vegetariana: queso de cabra • Vegana: sustituto de pavo (base de seitan) y parmesano vegano",
+        "price": "9,50€"
+      },
+      {
+        "name": "Ahumados",
+        "description": "Bacalao, palometa, pez espada y salmón ahumado, guacamole y hojas verdes",
+        "price": "11€"
+      },
+      {
+        "name": "Caprese di buffala",
+        "description": "Tomate, mozzarella de buffala y pesto de albahaca con nueces y AOVE",
+        "price": "11€"
+      }
+    ],
+    "meat_and_fish": [
+      {
+        "name": "Atún rojo",
+        "description": "con verduras al wok",
+        "price": "20€"
+      },
+      {
+        "name": "Bacalao gratinado",
+        "description": "con verduras al wok",
+        "price": "18€"
+      },
+      {
+        "name": "Entraña de ternera",
+        "description": "con guarnición",
+        "price": "17€"
+      },
+      {
+        "name": "Carrillada de ternera",
+        "description": "en salsa de zanahoria, mostaza y miel, con guarnición de couscous",
+        "price": "18€"
+      },
+      {
+        "name": "Plato infantil",
+        "description": "Pavo a la plancha con papas",
+        "price": "8€"
+      }
+    ]
+  },
+  "allergens": "Consulta con nuestro personal sobre alérgenos e intolerancias alimentarias",
+  "reserve_button": "Reservar Mesa",
+  "note": "Pregunta a nuestro personal por opciones vegetarianas, veganas y sin gluten"
+}

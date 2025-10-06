@@ -1,0 +1,163 @@
+{
+  "navbar": {
+    "home": "Home",
+    "menu": "Menu",
+    "thePatio": "The Patio",
+    "howToFindUs": "How to Find Us",
+    "reservations": "Reservations",
+    "reviews": "Reviews",
+    "contact": "Contact"
+  },
+  "hero": {
+    "title": "Discover El Higo",
+    "subtitle": "A hidden gem in Granada's Albaicín",
+    "cta": "Book a table"
+  },
+  "menu": {
+    "title": "Our Menu",
+    "subtitle": "Authentic flavors in the heart of the Albaicín",
+    "tapas": {
+      "title": "Tapas",
+      "hummus": "Homemade hummus with extra virgin olive oil",
+      "berenjenas": "Eggplant with cane honey",
+      "tajin": "Vegetable tajine with Moroccan spices"
+    },
+    "vegetarian": {
+      "title": "Vegetarian & Vegan Options",
+      "vegBurger": "Vegan burger with artisanal bread",
+      "vegTapas": "Selection of seasonal vegetarian tapas"
+    },
+    "drinks": {
+      "title": "Drinks",
+      "wine": "Local wines from Granada",
+      "beer": "Craft beers",
+      "tea": "Traditional Moorish tea"
+    }
+  },
+  "thePatio": {
+    "title": "The Patio",
+    "subtitle": "Our magical corner",
+    "description": "A hidden patio with plants, warm lights, and the true charm of the Albaicín. An intimate space where every corner tells a story."
+  },
+  "howToFindUs": {
+    "title": "How to Find Us",
+    "subtitle": "We await you in the heart of the Albaicín",
+    "directions": "We're located in the Albaicín, on a quiet street. Look for the door with flower pots and go down the stairs. It's a special place worth discovering.",
+    "address": "C. Horno del Hoyo 17, Albaicín",
+    "city": "18010 Granada",
+    "instructions": "Instructions",
+    "takeMeThere": "Get me there",
+    "gettingHereTips": "Getting Here Tips",
+    "walking": {
+      "title": "Walking",
+      "description": "From Plaza Nueva: 10-minute walk through the Albaicín."
+    },
+    "publicTransport": {
+      "title": "Public Transport",
+      "description": "Minibus C31, C32 - Stop 'Albaicín'."
+    }
+  },
+  "reservations": {
+    "title": "Reservations",
+    "subtitle": "We recommend booking for dinner",
+    "whatsapp": "Book via WhatsApp",
+    "thefork": "Book with TheFork",
+    "whatsappTitle": "WhatsApp",
+    "theforkTitle": "TheFork",
+    "phone": "+34 858 98 41 02",
+    "note": "For an optimal experience, we recommend making your reservation in advance.",
+    "whatsappMessage": "Hello! I would like to make a reservation at El Higo. Thank you!",
+    "comingSoon": "Coming soon"
+  },
+  "reviews": {
+    "title": "What our guests say",
+    "subtitle": "Discover what those who have already enjoyed our traditional Granada cuisine have to say",
+    "shareExperience": "Share your El Higo experience",
+    "reviewCallToAction": "Your opinion helps us continue improving and sharing the authentic gastronomic experience of El Higo",
+    "writeReview": "Write a review",
+    "anonymous": "Anonymous",
+    "recent": "Recent",
+    "review1": "An exceptional gastronomic experience. The authentic flavors of Granada in every dish. The honey lamb is spectacular and the service is impeccable.",
+    "review2": "Cozy atmosphere and delicious food. The seafood paella was perfect and the pionono dessert is the best I've ever had. Totally recommended.",
+    "review3": "Charming restaurant in the heart of Granada. The eggplant with honey is a delight and the oxtail melts in your mouth. We will definitely return.",
+    "reviewSource": "TripAdvisor / Google Reviews",
+    "reviewCount": "Based on {{count}} reviews"
+  },
+  "gallery": {
+    "title": "Gallery",
+    "subtitle": "Discover our space and cuisine",
+    "categories": {
+      "all": "All",
+      "restaurant": "Restaurant",
+      "food": "Food"
+    },
+    "imageAlt": {
+      "restaurantInterior": "Restaurant interior",
+      "preparedTable": "Prepared table",
+      "gourmetDish": "Gourmet dish",
+      "mainCourse": "Main course",
+      "professionalKitchen": "Professional kitchen",
+      "artisanalDessert": "Artisanal dessert",
+      "nightAmbiance": "Night ambiance",
+      "terraceDining": "Terrace dining"
+    }
+  },
+  "contact": {
+    "title": "Contact",
+    "subtitle": "Visit us in the Albaicín",
+    "address": "C. Horno del Hoyo 17, Albaicín",
+    "city": "18010 Granada",
+    "phone": "+34 858 98 41 02",
+    "phoneLabel": "Phone",
+    "locationLabel": "Location",
+    "addressLabel": "Address",
+    "whatsappLabel": "WhatsApp",
+    "informationTitle": "Contact Information",
+    "locationTitle": "Location",
+    "visitUsTitle": "Coming to visit us?",
+    "openInMaps": "Open in Google Maps",
+    "call": "Call",
+    "hours": "Opening Hours",
+    "hoursDetail": "12:30–4:30 PM / 6:30–11:30 PM",
+    "closed": "Closed on Mondays",
+    "socialMedia": "Follow us on social media"
+  },
+  "imageModal": {
+    "closeButton": "Close modal",
+    "previousButton": "Previous image",
+    "nextButton": "Next image"
+  },
+  "languageSelector": {
+    "ariaLabel": "Language selector",
+    "spanish": {
+      "name": "Español",
+      "description": "Cambiar a Español"
+    },
+    "english": {
+      "name": "English",
+      "description": "Switch to English"
+    }
+  },
+  "footer": {
+    "brand": "El Higo",
+    "description": "A hidden corner in Granada's Albaicín where every dish tells a story and every visit is a unique experience.",
+    "navigation": "Navigation",
+    "contactSection": "Contact",
+    "whatsapp": "WhatsApp",
+    "hours": "12:30–4:30 PM / 6:30–11:30 PM",
+    "followUs": "Follow us",
+    "location": "Albaicín, Granada",
+    "disclaimer": "Website mockup created for demonstration purposes."
+  },
+  "disclaimer": {
+    "title": "Important Notice",
+    "message": "This website is a prototype created for demonstration purposes. It is not the official website of El Higo restaurant.",
+    "understand": "Understood"
+  },
+  "notFound": {
+    "title": "Page not found",
+    "description": "The page you're looking for has gotten lost in the Albaicín's maze. But don't worry, we'll help you find your way back to El Higo.",
+    "homeButton": "Return home",
+    "suggestion": "Or explore our menu and book your table to discover the authentic flavors of Granada."
+  }
+}

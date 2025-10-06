@@ -1,0 +1,125 @@
+{
+  "title": "Our Menu",
+  "subtitle": "Authentic flavors in the heart of the Albaicín",
+  "categories": {
+    "starters": "Starters",
+    "sandwiches": "Sandwiches",
+    "salads": "Salads",
+    "meat_and_fish": "Meat & Fish"
+  },
+  "items": {
+    "starters": [
+      {
+        "name": "Avocado with prawns",
+        "description": "Avocado, prawns, homemade cocktail sauce",
+        "price": "9.50€",
+        "options": "Vegan option: with vegan cocktail sauce and nuts"
+      },
+      {
+        "name": "Hummus",
+        "description": "Chickpeas, lemon, garlic, tahini, cumin, EVOO",
+        "price": "11€"
+      },
+      {
+        "name": "Smoked Idiazábal cheese",
+        "description": "Sheep's milk cheese",
+        "price": "12€"
+      },
+      {
+        "name": "Trevélez serrano ham",
+        "description": "Smoked serrano ham from the Alpujarras",
+        "price": "11€"
+      },
+      {
+        "name": "Tuna tataki",
+        "description": "Marinated with soy sauce, ginger and vinegars, sesame coated",
+        "price": "20€"
+      },
+      {
+        "name": "Vegan pâté board",
+        "description": "Carrot, beetroot, black olives and eggplant",
+        "price": "18€"
+      },
+      {
+        "name": "Soup of the day",
+        "description": "Ask our staff",
+        "price": "17€"
+      }
+    ],
+    "sandwiches": [
+      {
+        "name": "Salmon",
+        "description": "Smoked salmon, avocado, lettuce and onion cream with cheese",
+        "price": "18€"
+      },
+      {
+        "name": "Vegetal",
+        "description": "Goat cheese, arugula, apple, caramelized onion and red pepper jam",
+        "price": "8€"
+      },
+      {
+        "name": "Vegan burger",
+        "description": "Spinach or oat burger 180g, tomato, lettuce, pickles, caramelized onion, mayonnaise and Dijon mustard",
+        "options": "Gluten-free option: spinach and gluten-free bread",
+        "price": "8€"
+      },
+      {
+        "name": "Beef burger",
+        "description": "200g prime beef, tomato, lettuce, pickles, caramelized onion, mayonnaise and mustard",
+        "price": "8.50€"
+      }
+    ],
+    "salads": [
+      {
+        "name": "El Higo",
+        "description": "Mixed greens, tomato, spring onion, carrot, cucumber, corn, varied fruits and goat cheese sauce"
+      },
+      {
+        "name": "Spinach and turkey",
+        "description": "Spinach, cherry tomato, pear, grilled turkey breast with sesame, walnuts, sunflower seeds, parmesan cheese and seasonal jam vinaigrette with EVOO",
+        "options": "Vegetarian: goat cheese • Vegan: turkey substitute (seitan base) and vegan parmesan",
+        "price": "9.50€"
+      },
+      {
+        "name": "Smoked fish",
+        "description": "Smoked cod, pomfret, swordfish and salmon, guacamole and green leaves",
+        "price": "11€"
+      },
+      {
+        "name": "Caprese di buffala",
+        "description": "Tomato, buffalo mozzarella and basil pesto with walnuts and EVOO",
+        "price": "11€"
+      }
+    ],
+    "meat_and_fish": [
+      {
+        "name": "Red tuna",
+        "description": "with wok vegetables",
+        "price": "20€"
+      },
+      {
+        "name": "Gratinated cod",
+        "description": "with wok vegetables",
+        "price": "18€"
+      },
+      {
+        "name": "Beef skirt steak",
+        "description": "with garnish",
+        "price": "17€"
+      },
+      {
+        "name": "Beef cheek",
+        "description": "in carrot, mustard and honey sauce, with couscous garnish",
+        "price": "18€"
+      },
+      {
+        "name": "Children's dish",
+        "description": "Grilled turkey with potatoes",
+        "price": "8€"
+      }
+    ]
+  },
+  "allergens": "Please ask our staff about allergens and food intolerances",
+  "reserve_button": "Book Table",
+  "note": "Ask our staff about vegetarian, vegan and gluten-free options"
+}

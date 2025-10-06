@@ -1,0 +1,163 @@
+{
+  "navbar": {
+    "home": "Inicio",
+    "menu": "Carta",
+    "thePatio": "El Patio",
+    "howToFindUs": "Cómo llegar",
+    "reservations": "Reservas",
+    "reviews": "Opiniones",
+    "contact": "Contacto"
+  },
+  "hero": {
+    "title": "Descubre El Higo",
+    "subtitle": "Un rincón escondido en el Albaicín de Granada",
+    "cta": "Reserva tu mesa"
+  },
+  "menu": {
+    "title": "Nuestra Carta",
+    "subtitle": "Sabores auténticos en el corazón del Albaicín",
+    "tapas": {
+      "title": "Tapas",
+      "hummus": "Hummus casero con aceite de oliva virgen extra",
+      "berenjenas": "Berenjenas con miel de caña",
+      "tajin": "Tajín de verduras con especias marroquíes"
+    },
+    "vegetarian": {
+      "title": "Opciones Vegetarianas y Veganas",
+      "vegBurger": "Hamburguesa vegana con pan artesanal",
+      "vegTapas": "Selección de tapas vegetarianas de temporada"
+    },
+    "drinks": {
+      "title": "Bebidas",
+      "wine": "Vinos locales de Granada",
+      "beer": "Cervezas artesanales",
+      "tea": "Té moruno tradicional"
+    }
+  },
+  "thePatio": {
+    "title": "El Patio",
+    "subtitle": "Nuestro rincón mágico",
+    "description": "Un patio escondido con plantas, luz cálida y el auténtico encanto del Albaicín. Un espacio íntimo donde cada rincón cuenta una historia."
+  },
+  "howToFindUs": {
+    "title": "Cómo llegar",
+    "subtitle": "Te esperamos en el corazón del Albaicín",
+    "directions": "Estamos en el Albaicín, en una calle tranquila. Busca la puerta con macetas y baja las escaleras. Es un lugar especial que merece la pena descubrir.",
+    "address": "C. Horno del Hoyo 17, Albaicín",
+    "city": "18010 Granada",
+    "instructions": "Instrucciones",
+    "takeMeThere": "Llévame",
+    "gettingHereTips": "Consejos para llegar",
+    "walking": {
+      "title": "A pie",
+      "description": "Desde Plaza Nueva: 10 minutos caminando por el Albaicín."
+    },
+    "publicTransport": {
+      "title": "Transporte público",
+      "description": "Minibus C31, C32 - Parada 'Albaicín'."
+    }
+  },
+  "reservations": {
+    "title": "Reservas",
+    "subtitle": "Recomendamos reservar para cenas",
+    "whatsapp": "Reservar por WhatsApp",
+    "thefork": "Reservar con TheFork",
+    "whatsappTitle": "WhatsApp",
+    "theforkTitle": "TheFork",
+    "phone": "+34 858 98 41 02",
+    "note": "Para una experiencia óptima, te recomendamos hacer tu reserva con antelación.",
+    "whatsappMessage": "Hola! Me gustaría hacer una reserva en El Higo. Gracias!",
+    "comingSoon": "Próximamente disponible"
+  },
+  "reviews": {
+    "title": "Opiniones de nuestros clientes",
+    "subtitle": "Descubre lo que dicen quienes ya han disfrutado de nuestra cocina tradicional granadina",
+    "shareExperience": "Comparte tu experiencia en El Higo",
+    "reviewCallToAction": "Tu opinión nos ayuda a seguir mejorando y compartir la auténtica experiencia gastronómica de El Higo",
+    "writeReview": "Escribir una reseña",
+    "anonymous": "Anónimo",
+    "recent": "Reciente",
+    "review1": "Una experiencia gastronómica excepcional. Los sabores auténticos de Granada en cada plato. El cordero a la miel es espectacular y el servicio es impecable.",
+    "review2": "Ambiente acogedor y comida deliciosa. La paella de mariscos estaba perfecta y el pionono de postre es el mejor que he probado. Totalmente recomendable.",
+    "review3": "Restaurante con encanto en pleno centro de Granada. La berenjenas con miel son una delicia y el rabo de toro se deshace en la boca. Volveremos sin duda.",
+    "reviewSource": "TripAdvisor / Google Reviews",
+    "reviewCount": "Basado en {{count}} opiniones"
+  },
+  "gallery": {
+    "title": "Galería",
+    "subtitle": "Descubre nuestro espacio y cocina",
+    "categories": {
+      "all": "Todas",
+      "restaurant": "Restaurante",
+      "food": "Comida"
+    },
+    "imageAlt": {
+      "restaurantInterior": "Interior del restaurante",
+      "preparedTable": "Mesa preparada",
+      "gourmetDish": "Plato gourmet",
+      "mainCourse": "Plato principal",
+      "professionalKitchen": "Cocina profesional",
+      "artisanalDessert": "Postre artesanal",
+      "nightAmbiance": "Ambiente nocturno",
+      "terraceDining": "Cena en terraza"
+    }
+  },
+  "contact": {
+    "title": "Contacto",
+    "subtitle": "Visítanos en el Albaicín",
+    "address": "C. Horno del Hoyo 17, Albaicín",
+    "city": "18010 Granada",
+    "phone": "+34 858 98 41 02",
+    "phoneLabel": "Teléfono",
+    "locationLabel": "Ubicación",
+    "addressLabel": "Dirección",
+    "whatsappLabel": "WhatsApp",
+    "informationTitle": "Información de contacto",
+    "locationTitle": "Ubicación",
+    "visitUsTitle": "¿Vienes a visitarnos?",
+    "openInMaps": "Abrir en Google Maps",
+    "call": "Llamar",
+    "hours": "Horarios",
+    "hoursDetail": "12:30–16:30 / 18:30–23:30",
+    "closed": "Cerrado los lunes",
+    "socialMedia": "Síguenos en redes sociales"
+  },
+  "imageModal": {
+    "closeButton": "Cerrar modal",
+    "previousButton": "Imagen anterior",
+    "nextButton": "Imagen siguiente"
+  },
+  "languageSelector": {
+    "ariaLabel": "Selector de idioma",
+    "spanish": {
+      "name": "Español",
+      "description": "Cambiar a Español"
+    },
+    "english": {
+      "name": "English",
+      "description": "Change to English"
+    }
+  },
+  "footer": {
+    "brand": "El Higo",
+    "description": "Un rincón escondido en el Albaicín de Granada donde cada plato cuenta una historia y cada visita es una experiencia única.",
+    "navigation": "Navegación",
+    "contactSection": "Contacto",
+    "whatsapp": "WhatsApp",
+    "hours": "12:30–16:30 / 18:30–23:30",
+    "followUs": "Síguenos",
+    "location": "Albaicín, Granada",
+    "disclaimer": "Website creado con fines demostrativos."
+  },
+  "disclaimer": {
+    "title": "Aviso Importante",
+    "message": "Este sitio web es un prototipo creado con fines demostrativos. No es la página oficial del restaurante El Higo.",
+    "understand": "Entendido"
+  },
+  "notFound": {
+    "title": "Página no encontrada",
+    "description": "La página que buscas se ha perdido en los laberintos del Albaicín. Pero no te preocupes, te ayudamos a encontrar el camino de vuelta a El Higo.",
+    "homeButton": "Volver al inicio",
+    "suggestion": "O explora nuestro menú y reserva tu mesa para descubrir los auténticos sabores de Granada."
+  }
+}
