@@ -55,29 +55,49 @@ export const getAllMenuImages = (): string[] => {
   return Object.values(menuImages).flat();
 };
 
-export const getMenuData = (t: (key: string, options?: any) => any): MenuCategory[] => [
-  {
-    id: "starters",
-    name: t("categories.starters", { ns: "menu" }),
-    items: t("items.starters", { returnObjects: true, ns: "menu" }) || [],
-    images: menuImages.starters,
-  },
-  {
-    id: "sandwiches",
-    name: t("categories.sandwiches", { ns: "menu" }),
-    items: t("items.sandwiches", { returnObjects: true, ns: "menu" }) || [],
-    images: menuImages.sandwiches,
-  },
-  {
-    id: "salads",
-    name: t("categories.salads", { ns: "menu" }),
-    items: t("items.salads", { returnObjects: true, ns: "menu" }) || [],
-    images: menuImages.salads,
-  },
-  {
-    id: "meat_and_fish",
-    name: t("categories.meat_and_fish", { ns: "menu" }),
-    items: t("items.meat_and_fish", { returnObjects: true, ns: "menu" }) || [],
-    images: menuImages.meat_and_fish,
-  },
-];
+// Import the menu data directly from JSON
+import esMenu from '../locales/es/menu.json';
+import enMenu from '../locales/en/menu.json';
+
+export const getMenuData = (t: (key: string, options?: any) => any, locale: string = 'es'): MenuCategory[] => {
+  const menuData = locale === 'es' ? esMenu : enMenu;
+
+  const getItems = (category: keyof typeof menuData.items): MenuItem[] => {
+    const items = menuData.items[category];
+    if (!Array.isArray(items)) return [];
+
+    return items.map((item: any) => ({
+      name: item.name,
+      description: item.description,
+      price: item.price,
+      options: item.options,
+    }));
+  };
+
+  return [
+    {
+      id: "starters",
+      name: menuData.categories.starters,
+      items: getItems("starters"),
+      images: menuImages.starters,
+    },
+    {
+      id: "sandwiches",
+      name: menuData.categories.sandwiches,
+      items: getItems("sandwiches"),
+      images: menuImages.sandwiches,
+    },
+    {
+      id: "salads",
+      name: menuData.categories.salads,
+      items: getItems("salads"),
+      images: menuImages.salads,
+    },
+    {
+      id: "meat_and_fish",
+      name: menuData.categories.meat_and_fish,
+      items: getItems("meat_and_fish"),
+      images: menuImages.meat_and_fish,
+    },
+  ];
+};

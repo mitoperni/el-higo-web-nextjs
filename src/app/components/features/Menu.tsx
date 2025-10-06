@@ -1,8 +1,8 @@
 'use client';
 import { useState, useEffect } from 'react';
-import { useTranslations } from 'next-intl';
+import { useTranslations, useLocale } from 'next-intl';
 import Spinner from '../ui/Spinner';
-import { getMenuData, getAllMenuImages } from '../../data/menuData';
+import { getMenuData, getAllMenuImages } from '../../../data/menuData';
 
 interface MenuProps {
   onImagesLoad?: (loaded: boolean) => void;
@@ -10,7 +10,8 @@ interface MenuProps {
 
 const Menu = ({ onImagesLoad }: MenuProps) => {
   const t = useTranslations();
-  const [loadingImages, setLoadingImages] = useState({});
+  const locale = useLocale();
+  const [loadingImages, setLoadingImages] = useState<Record<string, boolean>>({});
 
   useEffect(() => {
     if (onImagesLoad) {
@@ -36,14 +37,14 @@ const Menu = ({ onImagesLoad }: MenuProps) => {
     }
   }, [onImagesLoad]);
 
-  const menuCategories = getMenuData(t);
+  const menuCategories = getMenuData(t, locale);
 
-  const handleImageLoad = (categoryId, index) => {
+  const handleImageLoad = (categoryId: string, index: number) => {
     const key = `${categoryId}-${index}`;
     setLoadingImages(prev => ({ ...prev, [key]: false }));
   };
 
-  const handleImageLoadStart = (categoryId, index) => {
+  const handleImageLoadStart = (categoryId: string, index: number) => {
     const key = `${categoryId}-${index}`;
     setLoadingImages(prev => ({ ...prev, [key]: true }));
   };

@@ -1,17 +1,18 @@
 'use client';
 import { useState, useRef, useEffect } from "react";
-import { useTranslations } from "next-intl";
-import { usePathname } from "next/navigation";
+import { useTranslations, useLocale } from "next-intl";
+import { useRouter, usePathname } from "next/navigation";
 import LanguageLink from "../ui/LanguageLink";
 import Icons from "../ui/Icons";
 
 const Navbar = () => {
   const t = useTranslations();
+  const router = useRouter();
   const pathname = usePathname();
+  const currentLang = useLocale();
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const [isLanguageOpen, setIsLanguageOpen] = useState(false);
   const [isMobileLanguageOpen, setIsMobileLanguageOpen] = useState(false);
-  const [currentLang, setCurrentLang] = useState('es');
   const languageDropdownRef = useRef<HTMLDivElement>(null);
   const mobileLanguageDropdownRef = useRef<HTMLDivElement>(null);
 
@@ -35,11 +36,14 @@ const Navbar = () => {
   const currentLanguage = languages.find(lang => lang.code === currentLang);
 
   const toggleLanguage = (langCode: string) => {
-    document.cookie = `NEXT_LOCALE=${langCode}; path=/; max-age=31536000`;
-    setCurrentLang(langCode);
     setIsLanguageOpen(false);
     setIsMobileLanguageOpen(false);
-    window.location.reload();
+
+    // Remove the locale prefix from pathname to get the base path
+    const pathWithoutLocale = pathname.replace(/^\/[a-z]{2}/, '') || '/';
+
+    // Navigate to the same path with the new locale
+    router.push(`/${langCode}${pathWithoutLocale}`);
   };
 
   useEffect(() => {
