@@ -2,6 +2,11 @@ import { useTranslations } from "next-intl";
 import Icons from "../../components/ui/Icons";
 import MapButton from "../../components/features/how-to-find-us/MapButton";
 import { getTranslations } from "next-intl/server";
+import { Metadata } from "next";
+
+type Props = {
+  params: Promise<{ locale: string }>;
+};
 
 export async function generateMetadata({ params }: Props): Promise<Metadata> {
   const { locale } = await params;
