@@ -1,10 +1,10 @@
-'use client';
-import { useState, useEffect } from 'react';
-import { useTranslations, useLocale } from 'next-intl';
-import Image from 'next/image';
-import Spinner from '../ui/Spinner';
-import { getMenuData, getAllMenuImages } from '../../../data/menuData';
-import './Menu.css'
+"use client";
+import { useState, useEffect } from "react";
+import { useTranslations, useLocale } from "next-intl";
+import Image from "next/image";
+import Spinner from "../ui/Spinner";
+import { getMenuData, getAllMenuImages } from "../../../data/menuData";
+import "./Menu.css";
 
 interface MenuProps {
   onImagesLoad?: (loaded: boolean) => void;
@@ -13,7 +13,9 @@ interface MenuProps {
 const Menu = ({ onImagesLoad }: MenuProps) => {
   const t = useTranslations();
   const locale = useLocale();
-  const [loadingImages, setLoadingImages] = useState<Record<string, boolean>>({});
+  const [loadingImages, setLoadingImages] = useState<Record<string, boolean>>(
+    {}
+  );
 
   useEffect(() => {
     if (onImagesLoad) {
@@ -21,7 +23,7 @@ const Menu = ({ onImagesLoad }: MenuProps) => {
       let loadedCount = 0;
 
       allImages.forEach((imageSrc) => {
-        const img = document.createElement('img');
+        const img = document.createElement("img");
         img.onload = () => {
           loadedCount++;
           if (loadedCount === allImages.length) {
@@ -43,12 +45,12 @@ const Menu = ({ onImagesLoad }: MenuProps) => {
 
   const handleImageLoad = (categoryId: string, index: number) => {
     const key = `${categoryId}-${index}`;
-    setLoadingImages(prev => ({ ...prev, [key]: false }));
+    setLoadingImages((prev) => ({ ...prev, [key]: false }));
   };
 
   const handleImageLoadStart = (categoryId: string, index: number) => {
     const key = `${categoryId}-${index}`;
-    setLoadingImages(prev => ({ ...prev, [key]: true }));
+    setLoadingImages((prev) => ({ ...prev, [key]: true }));
   };
 
   return (
@@ -130,7 +132,18 @@ const Menu = ({ onImagesLoad }: MenuProps) => {
           ))}
         </div>
 
-        <div className="text-center mt-16">
+        <div className="text-center mt-4">
+          <div className="bg-white rounded-lg shadow-lg p-4 max-w-3xl mx-auto">
+            <p className="text-dark-text mb-4 font-body text-sm">
+              {t("allergens", { ns: "menu" })}
+            </p>
+            <p className="text-green-leaf font-body text-sm font-semibold">
+              {t("note", { ns: "menu" })}
+            </p>
+          </div>
+        </div>
+
+        <div className="text-center mt-8">
           <div className="bg-white rounded-lg shadow-lg p-8 max-w-3xl mx-auto">
             <p className="text-dark-text mb-4 font-body text-sm">
               {t("allergens", { ns: "menu" })}
