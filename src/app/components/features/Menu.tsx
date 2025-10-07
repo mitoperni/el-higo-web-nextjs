@@ -3,6 +3,7 @@ import { useState, useEffect } from 'react';
 import { useTranslations, useLocale } from 'next-intl';
 import Spinner from '../ui/Spinner';
 import { getMenuData, getAllMenuImages } from '../../../data/menuData';
+import './Menu.css'
 
 interface MenuProps {
   onImagesLoad?: (loaded: boolean) => void;
@@ -53,9 +54,9 @@ const Menu = ({ onImagesLoad }: MenuProps) => {
     <section id="menu" className="py-20 bg-cream">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-16">
-          <h1 className="text-4xl md:text-5xl font-display font-bold text-dark-text mb-4">
+          <h2 className="text-4xl md:text-5xl font-display font-bold text-dark-text mb-4">
             {t("title", { ns: "menu" })}
-          </h1>
+          </h2>
           <div className="w-24 h-1 bg-terracotta mx-auto mb-6"></div>
           <p className="text-xl text-dark-text max-w-2xl mx-auto font-body">
             {t("subtitle", { ns: "menu" })}
@@ -79,27 +80,36 @@ const Menu = ({ onImagesLoad }: MenuProps) => {
                         <div className="relative overflow-hidden rounded-lg mb-3 h-48">
                           {loadingImages[`${category.id}-${index}`] ? (
                             <div className="w-full h-48 flex items-center justify-center bg-gray-100 rounded-lg">
-                              <Spinner size="medium" className="text-terracotta" />
+                              <Spinner
+                                size="medium"
+                                className="text-terracotta"
+                              />
                             </div>
                           ) : (
                             <img
                               src={category.images[index] || category.images[0]}
                               alt={item.name}
                               className="w-full h-48 object-cover group-hover:scale-105 transition-transform duration-300"
-                              onLoadStart={() => handleImageLoadStart(category.id, index)}
+                              onLoadStart={() =>
+                                handleImageLoadStart(category.id, index)
+                              }
                               onLoad={() => handleImageLoad(category.id, index)}
-                              onError={() => handleImageLoad(category.id, index)}
+                              onError={() =>
+                                handleImageLoad(category.id, index)
+                              }
                             />
                           )}
                         </div>
-                        <h3 className="font-body font-semibold text-dark-text text-lg leading-tight mb-2">
-                          {item.name}
+                        <div className="flex justify-between items-baseline mb-2">
+                          <h3 className="font-body font-semibold text-dark-text text-lg leading-tight">
+                            {item.name}
+                          </h3>
                           {item.price && (
-                            <span className="ml-2 text-terracotta font-bold">
+                            <span className="mr-4 text-terracotta font-bold price">
                               {item.price}
                             </span>
                           )}
-                        </h3>
+                        </div>
                         <p className="font-body text-dark-text text-sm leading-relaxed opacity-75 mb-2">
                           {item.description}
                         </p>

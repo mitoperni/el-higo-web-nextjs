@@ -1,4 +1,4 @@
-'use client';
+"use client";
 import { useTranslations } from "next-intl";
 import Icons from "../ui/Icons";
 
@@ -9,9 +9,9 @@ const Contact = () => {
     <section id="contact" className="py-20 bg-white min-h-screen">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-16">
-          <h1 className="text-4xl md:text-5xl font-display font-bold text-dark-text mb-4">
+          <h2 className="text-4xl md:text-5xl font-display font-bold text-dark-text mb-4">
             {t("contact.title")}
-          </h1>
+          </h2>
           <div className="w-24 h-1 bg-terracotta mx-auto mb-6"></div>
           <p className="text-xl text-dark-text max-w-2xl mx-auto font-body">
             {t("contact.subtitle")}

@@ -12,9 +12,9 @@ const Reservations = () => {
     <section id="reservations" className="py-20 bg-cream">
       <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-16">
-          <h1 className="text-4xl md:text-5xl font-display font-bold text-dark-text mb-4">
+          <h2 className="text-4xl md:text-5xl font-display font-bold text-dark-text mb-4">
             {t('reservations.title')}
-          </h1>
+          </h2>
           <div className="w-24 h-1 bg-terracotta mx-auto mb-6"></div>
           <p className="text-xl text-dark-text max-w-2xl mx-auto font-body">
             {t('reservations.subtitle')}
