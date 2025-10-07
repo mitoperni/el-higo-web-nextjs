@@ -59,6 +59,7 @@ export const getAllMenuImages = (): string[] => {
 import esMenu from '../locales/es/menu.json';
 import enMenu from '../locales/en/menu.json';
 
+// eslint-disable-next-line @typescript-eslint/no-explicit-any
 export const getMenuData = (t: (key: string, options?: any) => any, locale: string = 'es'): MenuCategory[] => {
   const menuData = locale === 'es' ? esMenu : enMenu;
 
@@ -66,6 +67,7 @@ export const getMenuData = (t: (key: string, options?: any) => any, locale: stri
     const items = menuData.items[category];
     if (!Array.isArray(items)) return [];
 
+    // eslint-disable-next-line @typescript-eslint/no-explicit-any
     return items.map((item: any) => ({
       name: item.name,
       description: item.description,

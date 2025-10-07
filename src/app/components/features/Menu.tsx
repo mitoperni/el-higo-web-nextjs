@@ -1,6 +1,7 @@
 'use client';
 import { useState, useEffect } from 'react';
 import { useTranslations, useLocale } from 'next-intl';
+import Image from 'next/image';
 import Spinner from '../ui/Spinner';
 import { getMenuData, getAllMenuImages } from '../../../data/menuData';
 import './Menu.css'
@@ -19,8 +20,8 @@ const Menu = ({ onImagesLoad }: MenuProps) => {
       const allImages = getAllMenuImages();
       let loadedCount = 0;
 
-      allImages.forEach((imageSrc, index) => {
-        const img = new Image();
+      allImages.forEach((imageSrc) => {
+        const img = document.createElement('img');
         img.onload = () => {
           loadedCount++;
           if (loadedCount === allImages.length) {
@@ -86,9 +87,11 @@ const Menu = ({ onImagesLoad }: MenuProps) => {
                               />
                             </div>
                           ) : (
-                            <img
+                            <Image
                               src={category.images[index] || category.images[0]}
                               alt={item.name}
+                              width={400}
+                              height={192}
                               className="w-full h-48 object-cover group-hover:scale-105 transition-transform duration-300"
                               onLoadStart={() =>
                                 handleImageLoadStart(category.id, index)
@@ -97,6 +100,7 @@ const Menu = ({ onImagesLoad }: MenuProps) => {
                               onError={() =>
                                 handleImageLoad(category.id, index)
                               }
+                              loading="lazy"
                             />
                           )}
                         </div>

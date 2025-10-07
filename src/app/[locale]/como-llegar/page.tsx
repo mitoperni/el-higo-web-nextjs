@@ -2,6 +2,7 @@ import { useTranslations } from "next-intl";
 import Icons from "../../components/ui/Icons";
 import MapButton from "../../components/features/how-to-find-us/MapButton";
 import { getTranslations } from "next-intl/server";
+import { getAbsoluteUrl, getLocalizedUrl } from '@/config/site';
 import { Metadata } from "next";
 
 type Props = {
@@ -15,6 +16,27 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   return {
     title: t("howToFind.title"),
     description: t("howToFind.description"),
+    openGraph: {
+      title: t("howToFind.title"),
+      description: t("howToFind.description"),
+      url: getLocalizedUrl(locale, '/como-llegar'),
+      type: 'website',
+      images: [
+        {
+          url: getAbsoluteUrl('/og-image.jpg'),
+          width: 1200,
+          height: 630,
+          alt: t("howToFind.title"),
+        },
+      ],
+    },
+    alternates: {
+      canonical: getLocalizedUrl(locale, '/como-llegar'),
+      languages: {
+        'es': getLocalizedUrl('es', '/como-llegar'),
+        'en': getLocalizedUrl('en', '/como-llegar'),
+      },
+    },
   };
 }
 

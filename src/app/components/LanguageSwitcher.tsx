@@ -5,7 +5,7 @@ import { useTransition } from 'react';
 export default function LanguageSwitcher() {
   const [isPending, startTransition] = useTransition();
 
-  const changeLanguage = (locale) => {
+  const changeLanguage = (locale: string) => {
     startTransition(() => {
       document.cookie = `NEXT_LOCALE=${locale}; path=/; max-age=31536000`;
       window.location.reload();

@@ -1,22 +1,28 @@
 'use client';
 import { useTranslations } from 'next-intl';
 import LanguageLink from '../ui/LanguageLink';
+import Image from 'next/image';
 
 const Hero = () => {
   const t = useTranslations();
 
   return (
     <section className="relative min-h-screen flex items-center justify-center bg-black overflow-hidden">
-      <div
-        className="absolute inset-0 z-0"
-        style={{
-          backgroundImage: 'url(/IMG_1941.PNG)',
-          backgroundSize: 'cover',
-          backgroundPosition: 'center',
-          backgroundRepeat: 'no-repeat',
-          filter: 'sepia(30%) saturate(120%) hue-rotate(10deg) brightness(0.9) contrast(1.1)',
-        }}
-      />
+      <div className="absolute inset-0 z-0">
+        <Image
+          src="/IMG_1941.PNG"
+          alt="El Higo Restaurant - Albaicín Granada"
+          fill
+          priority
+          quality={75}
+          sizes="100vw"
+          style={{
+            objectFit: 'cover',
+            objectPosition: 'center',
+            filter: 'sepia(30%) saturate(120%) hue-rotate(10deg) brightness(0.9) contrast(1.1)',
+          }}
+        />
+      </div>
       <div className="absolute inset-0 bg-gradient-to-br from-amber-900/40 via-orange-800/30 to-red-900/20 z-[1]"></div>
       <div className="absolute inset-0 bg-black/30 z-[2]"></div>
 
