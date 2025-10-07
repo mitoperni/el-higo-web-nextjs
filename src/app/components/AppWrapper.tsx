@@ -40,9 +40,14 @@ export default function AppWrapper({ children }: AppWrapperProps) {
 
   return (
     <>
+      {/* Skip link para accesibilidad de teclado */}
+      <a href="#main-content" className="skip-link">
+        Skip to main content
+      </a>
+
       <div className="App">
         <Navbar />
-        <main>
+        <main id="main-content">
           {children}
         </main>
         <Footer />

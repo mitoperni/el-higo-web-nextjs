@@ -39,13 +39,16 @@ const Hero = () => {
             href={`https://wa.me/34858984102?text=${encodeURIComponent(
               t('reservations.note')
             )}`}
-            className="bg-terracotta hover:bg-cream text-cream hover:text-terracotta font-body font-bold py-4 px-8 rounded-lg transition-colors duration-300 text-lg shadow-lg hover:shadow-xl transform hover:scale-105"
+            className="bg-green-leaf hover:bg-white text-white hover:text-green-leaf font-body font-bold py-4 px-8 rounded-lg transition-colors duration-300 text-lg shadow-lg hover:shadow-xl transform hover:scale-105"
+            aria-label={t('hero.cta')}
+            target="_blank"
+            rel="noopener noreferrer"
           >
             {t('hero.cta')}
           </a>
           <LanguageLink
             to="/carta"
-            className="border-2 border-cream text-cream hover:bg-cream hover:text-terracotta font-body font-bold py-4 px-8 rounded-lg transition-all duration-300 text-lg shadow-lg hover:shadow-xl transform hover:scale-105"
+            className="border-2 border-white text-white hover:bg-white hover:text-terracotta font-body font-bold py-4 px-8 rounded-lg transition-all duration-300 text-lg shadow-lg hover:shadow-xl transform hover:scale-105"
           >
             {t('navbar.menu')}
           </LanguageLink>

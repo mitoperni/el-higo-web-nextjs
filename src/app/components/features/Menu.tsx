@@ -149,12 +149,20 @@ const Menu = ({ onImagesLoad }: MenuProps) => {
                 t("reservations.note", { ns: "common" })
               )}`}
               className="inline-flex items-center  bg-green-leaf hover:bg-terracotta text-white font-body font-bold py-3 px-8 rounded-lg transition-colors duration-300 mr-4"
+              aria-label={t("reservations.whatsapp", { ns: "common" })}
+              target="_blank"
+              rel="noopener noreferrer"
             >
               {t("reservations.whatsapp", { ns: "common" })}
             </a>
             <a
-              href="#"
+              href={`https://wa.me/34858984102?text=${encodeURIComponent(
+                t("reservations.note", { ns: "common" })
+              )}`}
               className="inline-flex items-center bg-terracotta hover:bg-green-leaf text-white font-body font-bold py-3 px-8 mt-4 md:mt-0 rounded-lg transition-colors duration-300"
+              aria-label={t("reserve_button", { ns: "menu" })}
+              target="_blank"
+              rel="noopener noreferrer"
             >
               {t("reserve_button", { ns: "menu" })}
             </a>

@@ -20,6 +20,7 @@ const Footer = () => {
                 href="https://facebook.com/elhigogranada"
                 target="_blank"
                 rel="noopener noreferrer"
+                aria-label="Visit El Higo on Facebook"
                 className="bg-blue-600 hover:bg-blue-700 p-2 rounded-full transition-colors duration-300"
               >
                 <Icons.Facebook className="w-5 h-5" />
@@ -28,6 +29,7 @@ const Footer = () => {
                 href="https://instagram.com/elhigogranada"
                 target="_blank"
                 rel="noopener noreferrer"
+                aria-label="Visit El Higo on Instagram"
                 className="bg-gradient-to-r from-purple-500 to-pink-500 hover:from-purple-600 hover:to-pink-600 p-2 rounded-full transition-colors duration-300"
               >
                 <Icons.Instagram className="w-5 h-5" />
@@ -101,7 +103,7 @@ const Footer = () => {
             <h4 className="text-lg font-display font-semibold text-white mb-4">{t('contact.hours')}</h4>
             <div className="text-cream space-y-1 font-body">
               <p className="font-medium text-sm">{t('footer.hours')}</p>
-              <p className="text-terracotta mt-2 text-sm">{t('contact.closed')}</p>
+              <p className="text-cream font-semibold mt-2 text-sm">{t('contact.closed')}</p>
             </div>
           </div>
         </div>

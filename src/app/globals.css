@@ -16,3 +16,35 @@ body {
 h1, h2, h3, h4, h5, h6 {
   font-family: 'Lora', serif;
 }
+
+/* Accesibilidad: Focus visible para navegación con teclado */
+*:focus-visible {
+  outline: 3px solid #b86b3a;
+  outline-offset: 2px;
+  border-radius: 4px;
+}
+
+/* Asegurar que los botones y enlaces tengan buen contraste en focus */
+button:focus-visible,
+a:focus-visible {
+  outline: 3px solid #b86b3a;
+  outline-offset: 3px;
+}
+
+/* Skip link para accesibilidad de teclado */
+.skip-link {
+  position: absolute;
+  top: -40px;
+  left: 0;
+  background: #2d5a2d;
+  color: white;
+  padding: 8px 16px;
+  text-decoration: none;
+  z-index: 100;
+  font-weight: bold;
+  border-radius: 0 0 4px 0;
+}
+
+.skip-link:focus {
+  top: 0;
+}

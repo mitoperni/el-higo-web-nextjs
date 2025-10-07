@@ -26,7 +26,7 @@ const ReviewCard = ({ review }: ReviewCardProps) => {
           <h3 className="font-display font-semibold text-dark-text">
             {review.name || t("reviews.anonymous")}
           </h3>
-          <p className="text-sm text-dark-text opacity-70 font-body">
+          <p className="text-sm text-dark-text opacity-80 font-body">
             {review.date || t("reviews.recent")}
           </p>
         </div>
@@ -39,7 +39,7 @@ const ReviewCard = ({ review }: ReviewCardProps) => {
       </p>
 
       <div className="mt-4 pt-4 border-t border-gray-200">
-        <div className="flex items-center text-sm text-dark-text opacity-60 font-body">
+        <div className="flex items-center text-sm text-dark-text opacity-80 font-body">
           <Icons.CheckCircle className="w-4 h-4 mr-1" />
           {t("reviews.reviewSource")}
         </div>

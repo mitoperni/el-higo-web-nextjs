@@ -26,12 +26,12 @@ const Reservations = () => {
           <div className="bg-white rounded-lg shadow-lg p-8 mb-8">
             <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
               <div className="text-center">
-                <div className="bg-terracotta text-white p-4 rounded-full w-16 h-16 flex items-center justify-center mx-auto mb-4">
+                <div className="bg-dark-text text-white p-4 rounded-full w-16 h-16 flex items-center justify-center mx-auto mb-4">
                   <Icons.Clock className="w-8 h-8" />
                 </div>
                 <h3 className="font-display font-semibold text-dark-text mb-2">{t('contact.hours')}</h3>
                 <p className="font-body text-dark-text text-sm">{t('contact.hoursDetail')}</p>
-                <p className="font-body text-terracotta text-sm mt-1">{t('contact.closed')}</p>
+                <p className="font-body text-green-leaf font-semibold text-sm mt-1">{t('contact.closed')}</p>
               </div>
 
               <div className="text-center">
@@ -43,7 +43,7 @@ const Reservations = () => {
               </div>
 
               <div className="text-center">
-                <div className="bg-terracotta text-white p-4 rounded-full w-16 h-16 flex items-center justify-center mx-auto mb-4">
+                <div className="bg-dark-text text-white p-4 rounded-full w-16 h-16 flex items-center justify-center mx-auto mb-4">
                   <Icons.Location className="w-8 h-8" />
                 </div>
                 <h3 className="font-display font-semibold text-dark-text mb-2">{t('contact.locationLabel')}</h3>
@@ -78,7 +78,7 @@ const Reservations = () => {
 
             {/* TheFork Reservation */}
             <div className="bg-white rounded-lg shadow-lg overflow-hidden">
-              <div className="bg-terracotta text-white p-6">
+              <div className="bg-dark-text text-white p-6">
                 <div className="flex items-center">
                   <Icons.Restaurant className="w-8 h-8 mr-3" />
                   <h3 className="text-xl font-display font-bold">{t('reservations.theforkTitle')}</h3>
