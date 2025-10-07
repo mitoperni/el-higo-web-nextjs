@@ -85,22 +85,21 @@ const ImageModal = ({ isOpen, onClose, imageSrc, imageAlt, images = [], currentI
 
       {/* Modal content */}
       <div className="relative max-w-4xl max-h-full mx-4 animate-in zoom-in-95 duration-300">
-        {imageLoading ? (
+        {imageLoading && (
           <div className="min-h-96 flex items-center justify-center">
             <Spinner size="large" className="text-white" />
           </div>
-        ) : (
-          <img
-            src={imageSrc}
-            alt={imageAlt}
-            className="max-w-full max-h-screen object-contain"
-            onLoad={() => setImageLoading(false)}
-            onError={() => setImageLoading(false)}
-          />
         )}
+        <img
+          src={imageSrc}
+          alt={imageAlt}
+          className={`max-w-full max-h-screen object-contain ${imageLoading ? 'hidden' : ''}`}
+          onLoad={() => setImageLoading(false)}
+          onError={() => setImageLoading(false)}
+        />
 
         {/* Image counter */}
-        {images && images.length > 1 && (
+        {images && images.length > 1 && !imageLoading && (
           <div className="absolute bottom-4 left-1/2 transform -translate-x-1/2 bg-black bg-opacity-50 text-white px-3 py-1 rounded-full text-sm">
             {currentIndex + 1} / {images.length}
           </div>
