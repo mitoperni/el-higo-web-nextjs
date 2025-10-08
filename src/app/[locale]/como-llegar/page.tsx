@@ -51,7 +51,7 @@ export default function HowToFindUsPage() {
             {t("howToFindUs.title")}
           </h1>
           <div className="w-24 h-1 bg-terracotta mx-auto mb-6"></div>
-          <p className="text-xl text-dark-text max-w-2xl mx-auto font-body">
+          <p className="text-xl text-dark-text font-Bodoni max-w-2xl mx-auto font-body">
             {t("howToFindUs.subtitle")}
           </p>
         </div>

@@ -17,9 +17,10 @@ const Hero = () => {
           quality={75}
           sizes="100vw"
           style={{
-            objectFit: 'cover',
-            objectPosition: 'center',
-            filter: 'sepia(30%) saturate(120%) hue-rotate(10deg) brightness(0.9) contrast(1.1)',
+            objectFit: "cover",
+            objectPosition: "center",
+            filter:
+              "sepia(30%) saturate(120%) hue-rotate(10deg) brightness(0.9) contrast(1.1)",
           }}
         />
       </div>
@@ -28,29 +29,29 @@ const Hero = () => {
 
       <div className="relative z-[10] text-center text-white px-4 sm:px-6 lg:px-8 max-w-4xl mx-auto">
         <h1 className="text-4xl md:text-6xl font-display font-bold mb-6 leading-tight">
-          {t('hero.title')}
+          {t("hero.title")}
         </h1>
-        <p className="text-xl md:text-2xl mb-8 text-cream max-w-2xl mx-auto leading-relaxed font-body">
-          {t('hero.subtitle')}
+        <p className="text-xl md:text-2xl font-Bodoni mb-8 text-cream max-w-2xl mx-auto leading-relaxed font-body">
+          {t("hero.subtitle")}
         </p>
 
         <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
           <a
             href={`https://wa.me/34858984102?text=${encodeURIComponent(
-              t('reservations.note')
+              t("reservations.note")
             )}`}
             className="bg-green-leaf hover:bg-white text-white hover:text-green-leaf font-body font-bold py-4 px-8 rounded-lg transition-colors duration-300 text-lg shadow-lg hover:shadow-xl transform hover:scale-105"
-            aria-label={t('hero.cta')}
+            aria-label={t("hero.cta")}
             target="_blank"
             rel="noopener noreferrer"
           >
-            {t('hero.cta')}
+            {t("hero.cta")}
           </a>
           <LanguageLink
             to="/carta"
             className="border-2 border-white text-white hover:bg-white hover:text-terracotta font-body font-bold py-4 px-8 rounded-lg transition-all duration-300 text-lg shadow-lg hover:shadow-xl transform hover:scale-105"
           >
-            {t('navbar.menu')}
+            {t("navbar.menu")}
           </LanguageLink>
         </div>
       </div>

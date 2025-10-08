@@ -38,7 +38,7 @@ const Reviews = () => {
             {t("reviews.title")}
           </h2>
           <div className="w-24 h-1 bg-terracotta mx-auto mb-6"></div>
-          <p className="text-xl text-dark-text mb-8 max-w-2xl mx-auto font-body">
+          <p className="text-xl text-dark-text font-Bodoni mb-8 max-w-2xl mx-auto font-body">
             {t("reviews.subtitle")}
           </p>
 
@@ -67,7 +67,7 @@ const Reviews = () => {
               <h3 className="text-3xl font-display font-bold text-dark-text mb-2">
                 {t("reviews.shareExperience")}
               </h3>
-              <p className="text-dark-text/80 mb-6 font-body text-lg leading-relaxed">
+              <p className="text-dark-text/80 mb-6 font-Bodoni text-lg leading-relaxed">
                 {t("reviews.reviewCallToAction")}
               </p>
             </div>
