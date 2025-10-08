@@ -89,7 +89,7 @@ const ThePatio = () => {
             {t("thePatio.title")}
           </h2>
           <div className="w-24 h-1 bg-terracotta mx-auto mb-6"></div>
-          <p className="text-xl text-dark-text font-Bodoni max-w-2xl mx-auto font-body">
+          <p className="text-xl text-dark-text max-w-2xl mx-auto font-body">
             {t("thePatio.description")}
           </p>
         </div>
@@ -130,7 +130,7 @@ const ThePatio = () => {
             href={`https://wa.me/34858984102?text=${encodeURIComponent(
               t("reservations.note")
             )}`}
-            className="inline-block bg-green-leaf hover:bg-terracotta text-white px-8 py-3 rounded-lg font-body font-semibold transition-colors duration-300"
+            className="inline-block bg-green-leaf hover:bg-terracotta text-white px-8 py-3 rounded-lg font-body font-semibold hover:bg-cream transition-colors duration-300"
           >
             {t("reservations.whatsapp")}
           </a>

@@ -48,12 +48,11 @@ const ImageModal = ({ isOpen, onClose, imageSrc, imageAlt, images = [], currentI
   if (!isOpen) return null;
 
   return (
-    <div className="fixed inset-0 z-50 flex items-center justify-center bg-black bg-opacity-90 animate-in fade-in duration-300">
-      {/* Close button */}
+    <div className="fixed inset-0 z-50 flex items-center justify-center bg-black/65 animate-in fade-in duration-300">
       <button
         onClick={onClose}
-        className="absolute top-4 right-4 text-white hover:text-gray-300 transition-colors z-10"
-        aria-label={t('imageModal.closeButton')}
+        className="absolute top-4 right-4 text-white hover:text-terracotta transition-colors z-10"
+        aria-label={t("imageModal.closeButton")}
       >
         <Icons.Close className="w-8 h-8" />
       </button>
@@ -64,8 +63,8 @@ const ImageModal = ({ isOpen, onClose, imageSrc, imageAlt, images = [], currentI
           {currentIndex > 0 && onNavigate && (
             <button
               onClick={() => onNavigate(currentIndex - 1)}
-              className="absolute left-4 top-1/2 transform -translate-y-1/2 text-white hover:text-gray-300 transition-colors z-10"
-              aria-label={t('imageModal.previousButton')}
+              className="hidden lg:block absolute left-4 top-1/2 transform -translate-y-1/2 text-white hover:text-terracotta transition-colors z-10"
+              aria-label={t("imageModal.previousButton")}
             >
               <Icons.ChevronLeft className="w-10 h-10" />
             </button>
@@ -74,8 +73,8 @@ const ImageModal = ({ isOpen, onClose, imageSrc, imageAlt, images = [], currentI
           {currentIndex < images.length - 1 && onNavigate && (
             <button
               onClick={() => onNavigate(currentIndex + 1)}
-              className="absolute right-4 top-1/2 transform -translate-y-1/2 text-white hover:text-gray-300 transition-colors z-10"
-              aria-label={t('imageModal.nextButton')}
+              className="hidden lg:block absolute right-4 top-1/2 transform -translate-y-1/2 text-white hover:text-terracotta transition-colors z-10"
+              aria-label={t("imageModal.nextButton")}
             >
               <Icons.ChevronRight className="w-10 h-10" />
             </button>
@@ -83,34 +82,31 @@ const ImageModal = ({ isOpen, onClose, imageSrc, imageAlt, images = [], currentI
         </>
       )}
 
-      {/* Modal content */}
       <div className="relative max-w-4xl max-h-full mx-4 animate-in zoom-in-95 duration-300">
         {imageLoading && (
           <div className="min-h-96 flex items-center justify-center">
             <Spinner size="large" className="text-white" />
           </div>
         )}
+        {/* eslint-disable-next-line @next/next/no-img-element */}
         <img
           src={imageSrc}
           alt={imageAlt}
-          className={`max-w-full max-h-screen object-contain ${imageLoading ? 'hidden' : ''}`}
+          className={`max-w-full md:max-w-screen-md max-h-screen object-contain ${
+            imageLoading ? "hidden" : ""
+          }`}
           onLoad={() => setImageLoading(false)}
           onError={() => setImageLoading(false)}
         />
 
-        {/* Image counter */}
         {images && images.length > 1 && !imageLoading && (
-          <div className="absolute bottom-4 left-1/2 transform -translate-x-1/2 bg-black bg-opacity-50 text-white px-3 py-1 rounded-full text-sm">
+          <div className="absolute bottom-4 left-1/2 transform -translate-x-1/2 bg-opacity-5 text-white px-3 py-1 rounded-full text-sm">
             {currentIndex + 1} / {images.length}
           </div>
         )}
       </div>
 
-      {/* Backdrop click to close */}
-      <div
-        className="absolute inset-0 -z-10"
-        onClick={onClose}
-      ></div>
+      <div className="absolute inset-0 -z-10" onClick={onClose}></div>
     </div>
   );
 };
