@@ -1,4 +1,5 @@
-@import url('https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400;0,500;0,600;0,700;1,400&family=Inter:wght@300;400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Abril+Fatface&family=Great+Vibes&family=Playwrite+DE+SAS:wght@100..400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bodoni+Moda:ital,opsz,wght@0,6..96,400..900;1,6..96,400..900&display=swap');
 @import "tailwindcss";
 
 @theme {
@@ -9,12 +10,30 @@
 }
 
 body {
-  font-family: 'Inter', sans-serif;
+  font-family: "Inter", sans-serif;
   color: var(--color-dark-text);
 }
 
-h1, h2, h3, h4, h5, h6 {
-  font-family: 'Lora', serif;
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Abril Fatface", serif;
+  letter-spacing: 0.05em;
+}
+
+.font-abril {
+  font-family: "Abril Fatface", serif;
+  letter-spacing: 0.05em;
+}
+
+
+.font-Bodoni {
+  font-family: "Bodoni Moda", serif;
+  font-size: 1.5rem;
+  font-style: bold;
 }
 
 /* Accesibilidad: Focus visible para navegación con teclado */

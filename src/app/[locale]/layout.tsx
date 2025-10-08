@@ -7,6 +7,7 @@ import AppWrapper from '../components/AppWrapper';
 import StructuredData from '../components/seo/StructuredData';
 import { siteConfig, getAbsoluteUrl, getLocalizedUrl } from '@/config/site';
 import { Metadata } from 'next';
+import Image from 'next/image';
 import "../globals.css";
 
 const geistSans = Geist({
@@ -120,7 +121,18 @@ export default async function LocaleLayout({
       <head>
         <StructuredData locale={locale} />
       </head>
-      <body className={`${geistSans.variable} ${geistMono.variable} antialiased`}>
+      <body className={`${geistSans.variable} ${geistMono.variable} antialiased relative bg-cream`}>
+        {/* Decorative background SVG */}
+        <div className="fixed top-10 left-0 w-64 md:w-80 lg:w-96 h-64 md:h-80 lg:h-96 pointer-events-none z-1 opacity-[0.35]">
+          <Image
+            src="/Fig_Background.svg"
+            alt=""
+            fill
+            className="object-contain"
+            priority
+          />
+        </div>
+
         <NextIntlClientProvider messages={messages}>
           <AppWrapper>
             {children}

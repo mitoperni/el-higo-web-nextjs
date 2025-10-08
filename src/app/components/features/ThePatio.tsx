@@ -74,7 +74,7 @@ const ThePatio = () => {
 
   if (!imagesLoaded) {
     return (
-      <div className="min-h-screen flex items-center justify-center bg-cream pt-16">
+      <div className="min-h-screen flex items-center justify-center pt-16">
         <Spinner size="large" className="text-terracotta" />
       </div>
     );
@@ -83,7 +83,7 @@ const ThePatio = () => {
   return (
     <div className="min-h-screen pt-16">
       {/* Hero Section */}
-      <section className="pt-20 bg-cream">
+      <section className="pt-20">
         <div className="text-center">
           <h2 className="text-4xl md:text-5xl font-display font-bold text-dark-text mb-4">
             {t("thePatio.title")}
@@ -96,7 +96,7 @@ const ThePatio = () => {
       </section>
 
       {/* Gallery Section */}
-      <section className="py-16 bg-cream">
+      <section className="py-16">
         <div className="container mx-auto px-4">
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
             {patioImages.map((image, index) => (
@@ -121,7 +121,7 @@ const ThePatio = () => {
       </section>
 
       {/* Call to Action */}
-      <section className="pb-16 bg-cream text-white">
+      <section className="pb-16 text-white">
         <div className="container mx-auto px-4 text-center">
           <h2 className="text-3xl text-terracotta font-display font-bold mb-6">
             {t("hero.cta")}
@@ -130,7 +130,7 @@ const ThePatio = () => {
             href={`https://wa.me/34858984102?text=${encodeURIComponent(
               t("reservations.note")
             )}`}
-            className="inline-block bg-green-leaf hover:bg-terracotta text-white px-8 py-3 rounded-lg font-body font-semibold hover:bg-cream transition-colors duration-300"
+            className="inline-block bg-green-leaf hover:bg-terracotta text-white px-8 py-3 rounded-lg font-body font-semibold transition-colors duration-300"
           >
             {t("reservations.whatsapp")}
           </a>

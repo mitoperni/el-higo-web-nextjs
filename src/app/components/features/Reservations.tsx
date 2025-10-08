@@ -9,7 +9,7 @@ const Reservations = () => {
   const theForkMessage = t('reservations.comingSoon');
 
   return (
-    <section id="reservations" className="py-20 bg-cream">
+    <section id="reservations" className="py-20">
       <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-16">
           <h2 className="text-4xl md:text-5xl font-display font-bold text-dark-text mb-4">

@@ -45,7 +45,7 @@ export default function HowToFindUsPage() {
 
   return (
     <div className="min-h-screen pt-16">
-      <section className="py-20 bg-cream">
+      <section className="py-20">
         <div className="text-center">
           <h1 className="text-4xl md:text-5xl font-display font-bold text-dark-text mb-4">
             {t("howToFindUs.title")}
@@ -58,7 +58,7 @@ export default function HowToFindUsPage() {
       </section>
 
       {/* Content Section */}
-      <section className="py-16 bg-white">
+      <section className="py-16">
         <div className="container mx-auto px-4">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-start">
             {/* Directions */}
@@ -90,7 +90,7 @@ export default function HowToFindUsPage() {
                 </div>
               </div>
 
-              <div className="bg-cream p-6 rounded-lg">
+              <div className="bg-white p-6 rounded-lg">
                 <h3 className="text-xl font-display font-semibold text-dark-text mb-4">
                   {t("howToFindUs.instructions")}
                 </h3>
@@ -123,7 +123,7 @@ export default function HowToFindUsPage() {
       </section>
 
       {/* Transportation Tips */}
-      <section className="py-16 bg-cream">
+      <section className="py-16">
         <div className="container mx-auto px-4">
           <div className="max-w-4xl mx-auto">
             <h2 className="text-3xl font-display font-bold text-dark-text text-center mb-12">
