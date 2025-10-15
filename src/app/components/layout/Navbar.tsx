@@ -73,7 +73,7 @@ const Navbar = () => {
           <div className="flex-shrink-0">
             <LanguageLink
               to="/"
-              className="text-3xl font-abril text-terracotta hover:text-green-leaf transition-colors"
+              className="text-3xl font-abril text-terracotta hover:text-cream transition-colors"
             >
               El Higo
             </LanguageLink>
