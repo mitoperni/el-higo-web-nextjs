@@ -106,24 +106,26 @@ const Menu = ({ onImagesLoad }: MenuProps) => {
                             />
                           )}
                         </div>
-                        <div className="flex justify-between items-baseline mb-2">
-                          <h3 className="font-body font-semibold text-dark-text text-lg leading-tight">
-                            {item.name}
-                          </h3>
+                        <div className="flex justify-between items-end mb-2">
+                          <div className="flex-1">
+                            <h3 className="font-body font-semibold text-dark-text text-lg leading-tight">
+                              {item.name}
+                            </h3>
+                            <p className="font-body text-dark-text text-sm leading-relaxed opacity-75 mb-2">
+                              {item.description}
+                            </p>
+                            {item.options && (
+                              <p className="font-body text-terracotta text-xs leading-relaxed">
+                                {item.options}
+                              </p>
+                            )}
+                          </div>
                           {item.price && (
-                            <span className="mr-4 text-terracotta font-bold price">
+                            <span className="ml-4 text-dark-text font-bold price whitespace-nowrap">
                               {item.price}
                             </span>
                           )}
                         </div>
-                        <p className="font-body text-dark-text text-sm leading-relaxed opacity-75 mb-2">
-                          {item.description}
-                        </p>
-                        {item.options && (
-                          <p className="font-body text-terracotta text-xs leading-relaxed">
-                            {item.options}
-                          </p>
-                        )}
                       </div>
                     ))}
                 </div>
