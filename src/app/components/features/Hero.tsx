@@ -10,15 +10,15 @@ const Hero = () => {
     <section className="relative min-h-screen flex items-center justify-center bg-black overflow-hidden">
       <div className="absolute inset-0 z-0">
         <Image
-          src="/IMG_1941.PNG"
+          src="/hero-optimized.jpg"
           alt="El Higo Restaurant - Albaicín Granada"
           fill
           priority
-          quality={75}
+          fetchPriority="high"
+          quality={90}
           sizes="100vw"
+          className="object-cover object-center"
           style={{
-            objectFit: "cover",
-            objectPosition: "center",
             filter:
               "sepia(30%) saturate(120%) hue-rotate(10deg) brightness(0.9) contrast(1.1)",
           }}

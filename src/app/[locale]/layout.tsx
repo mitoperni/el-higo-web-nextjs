@@ -1,4 +1,4 @@
-import { Geist, Geist_Mono } from "next/font/google";
+import { Inter, Abril_Fatface, Bodoni_Moda } from "next/font/google";
 import { NextIntlClientProvider } from 'next-intl';
 import { getMessages, getTranslations } from 'next-intl/server';
 import { notFound } from 'next/navigation';
@@ -10,14 +10,25 @@ import { Metadata } from 'next';
 import Image from 'next/image';
 import "../globals.css";
 
-const geistSans = Geist({
-  variable: "--font-geist-sans",
+const inter = Inter({
+  variable: "--font-inter",
   subsets: ["latin"],
+  display: "swap",
+  weight: ["300", "400", "500", "600", "700"],
 });
 
-const geistMono = Geist_Mono({
-  variable: "--font-geist-mono",
+const abrilFatface = Abril_Fatface({
+  variable: "--font-abril",
   subsets: ["latin"],
+  display: "swap",
+  weight: "400",
+});
+
+const bodoniModa = Bodoni_Moda({
+  variable: "--font-bodoni",
+  subsets: ["latin"],
+  display: "swap",
+  weight: ["400", "500", "600", "700", "800", "900"],
 });
 
 type Props = {
@@ -121,7 +132,7 @@ export default async function LocaleLayout({
       <head>
         <StructuredData locale={locale} />
       </head>
-      <body className={`${geistSans.variable} ${geistMono.variable} antialiased relative bg-cream`}>
+      <body className={`${inter.variable} ${abrilFatface.variable} ${bodoniModa.variable} antialiased relative bg-cream`}>
         {/* Decorative background SVG */}
         <div className="fixed top-10 left-0 w-64 md:w-80 lg:w-96 h-64 md:h-80 lg:h-96 pointer-events-none z-1 opacity-[0.35]">
           <Image
