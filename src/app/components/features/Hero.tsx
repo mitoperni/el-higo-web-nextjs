@@ -15,13 +15,15 @@ const Hero = () => {
           fill
           priority
           fetchPriority="high"
-          quality={90}
-          sizes="100vw"
+          quality={85}
+          sizes="(max-width: 768px) 100vw, (max-width: 1200px) 100vw, 100vw"
           className="object-cover object-center"
           style={{
             filter:
               "sepia(30%) saturate(120%) hue-rotate(10deg) brightness(0.9) contrast(1.1)",
           }}
+          placeholder="blur"
+          blurDataURL="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMTAwJSIgaGVpZ2h0PSIxMDAlIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciPjxyZWN0IHdpZHRoPSIxMDAlIiBoZWlnaHQ9IjEwMCUiIGZpbGw9IiMyYzFhMGUiLz48L3N2Zz4="
         />
       </div>
       <div className="absolute inset-0 bg-gradient-to-br from-amber-900/40 via-orange-800/30 to-red-900/20 z-[1]"></div>

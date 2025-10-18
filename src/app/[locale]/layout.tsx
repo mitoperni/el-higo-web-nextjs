@@ -133,6 +133,12 @@ export default async function LocaleLayout({
       <head>
         <link rel="preconnect" href="https://fonts.googleapis.com" />
         <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="anonymous" />
+        <link
+          rel="preload"
+          as="image"
+          href="/hero-optimized.avif"
+          fetchPriority="high"
+        />
         <StructuredData locale={locale} />
       </head>
       <body className={`${inter.variable} ${abrilFatface.variable} ${bodoniModa.variable} antialiased relative bg-cream`}>
@@ -143,7 +149,8 @@ export default async function LocaleLayout({
             alt=""
             fill
             className="object-contain"
-            loading="lazy"
+            loading="eager"
+            fetchPriority="low"
           />
         </div>
 
