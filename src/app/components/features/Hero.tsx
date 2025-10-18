@@ -10,7 +10,7 @@ const Hero = () => {
     <section className="relative min-h-screen flex items-center justify-center bg-black overflow-hidden">
       <div className="absolute inset-0 z-0">
         <Image
-          src="/hero-optimized.jpg"
+          src="/hero-optimized.avif"
           alt="El Higo Restaurant - Albaicín Granada"
           fill
           priority
