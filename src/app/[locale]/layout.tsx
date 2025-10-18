@@ -9,6 +9,7 @@ import { siteConfig, getAbsoluteUrl, getLocalizedUrl } from '@/config/site';
 import { Metadata } from 'next';
 import Image from 'next/image';
 import "../globals.css";
+import { SpeedInsights } from "@vercel/speed-insights/next";
 
 const inter = Inter({
   variable: "--font-inter",
@@ -151,6 +152,7 @@ export default async function LocaleLayout({
             {children}
           </AppWrapper>
         </NextIntlClientProvider>
+        <SpeedInsights />
       </body>
     </html>
   );
