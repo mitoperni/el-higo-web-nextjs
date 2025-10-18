@@ -64,10 +64,10 @@ const Reviews = () => {
         <div className="text-center mt-16 relative z-10">
           <div className="bg-white rounded-lg shadow-xl p-8 max-w-2xl mx-auto">
             <div className="mb-6">
-              <h3 className="text-3xl font-display font-bold text-dark-text mb-2">
+              <h3 className="text-2xl font-display font-bold text-dark-text mb-2">
                 {t("reviews.shareExperience")}
               </h3>
-              <p className="text-dark-text/80 mb-6 font-Bodoni text-lg leading-relaxed">
+              <p className="text-dark-text/80 mb-6 font-Bodoni-body leading-relaxed">
                 {t("reviews.reviewCallToAction")}
               </p>
             </div>
