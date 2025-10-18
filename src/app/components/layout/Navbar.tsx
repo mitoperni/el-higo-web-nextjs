@@ -197,12 +197,16 @@ const Navbar = () => {
             <button
               onClick={() => setIsMenuOpen(!isMenuOpen)}
               className="inline-flex items-center justify-center p-2 rounded-md text-cream hover:text-terracotta hover:bg-terracotta/10 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-terracotta"
+              aria-label={isMenuOpen ? t("navbar.closeMenu") : t("navbar.openMenu")}
+              aria-expanded={isMenuOpen}
             >
               <Icons.Menu
                 className={`${isMenuOpen ? "hidden" : "block"} h-6 w-6`}
+                aria-hidden="true"
               />
               <Icons.Close
                 className={`${isMenuOpen ? "block" : "hidden"} h-6 w-6`}
+                aria-hidden="true"
               />
             </button>
           </div>

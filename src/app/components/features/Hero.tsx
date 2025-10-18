@@ -15,7 +15,7 @@ const Hero = () => {
           fill
           priority
           fetchPriority="high"
-          quality={85}
+          quality={75}
           sizes="(max-width: 768px) 100vw, (max-width: 1200px) 100vw, 100vw"
           className="object-cover object-center"
           style={{

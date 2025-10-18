@@ -6,7 +6,9 @@
     "howToFindUs": "How to Find Us",
     "reservations": "Reservations",
     "reviews": "Reviews",
-    "contact": "Contact"
+    "contact": "Contact",
+    "openMenu": "Open navigation menu",
+    "closeMenu": "Close navigation menu"
   },
   "hero": {
     "title": "Discover El Higo",

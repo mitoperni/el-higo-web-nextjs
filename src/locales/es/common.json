@@ -6,7 +6,9 @@
     "howToFindUs": "Cómo llegar",
     "reservations": "Reservas",
     "reviews": "Opiniones",
-    "contact": "Contacto"
+    "contact": "Contacto",
+    "openMenu": "Abrir menú de navegación",
+    "closeMenu": "Cerrar menú de navegación"
   },
   "hero": {
     "title": "Descubre El Higo",
